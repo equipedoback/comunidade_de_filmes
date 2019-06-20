@@ -1,0 +1,7 @@
+{
+  "name": "comunidade_de_filmes",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
