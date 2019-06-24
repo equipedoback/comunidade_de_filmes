@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 /**
  * Generated class for the MovieCardComponent component.
@@ -10,13 +10,12 @@ import { Component } from '@angular/core';
   selector: 'movie-card',
   templateUrl: 'movie-card.html'
 })
-export class MovieCardComponent {
+export default class MovieCardComponent {
 
-  text: string;
+ @Input () movie:any;
 
   constructor() {
-    console.log('Hello MovieCardComponent Component');
-    this.text = 'Hello World';
+    
   }
 
 }

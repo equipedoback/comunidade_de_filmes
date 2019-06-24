@@ -7,6 +7,8 @@ import { ComponentsModule } from '../components/components.module';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { MovieProvider } from '../providers/movie/movie';
+import { HttpClientModule } from '../../node_modules/@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { HomePage } from '../pages/home/home';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     ComponentsModule,
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -28,6 +31,7 @@ import { HomePage } from '../pages/home/home';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ComponentsModule,
+    MovieProvider,
   ]
 })
 export class AppModule {}
