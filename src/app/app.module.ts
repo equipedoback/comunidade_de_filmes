@@ -9,6 +9,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MovieProvider } from '../providers/movie/movie';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { CommentsPage } from '../pages/comments/comments';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    CommentsPage
   ],
   providers: [
     StatusBar,

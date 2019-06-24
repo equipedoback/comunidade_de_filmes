@@ -12,7 +12,7 @@ export class HomePage {
   constructor(public navCtrl: NavController,
       private movieProvider: MovieProvider
     ) {
-       this.movieProvider.getMovie().subscribe(movies => {
+       this.movieProvider.getMovie().subscribe((movies: any) => {
          this.movie = (movies as any).results
          console.log(movies);
        },error => {
